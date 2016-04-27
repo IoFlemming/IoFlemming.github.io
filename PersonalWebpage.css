@@ -1,14 +1,19 @@
 body{
-  background-image:url(sweden.jpg);
+  background-image:url(jay.jpg);
   height: 100vh;
-  background-size: cover;
-  margin-bottom: 50px;
-  display:flex;
+  background-size: 100%;
+  margin-bottom: 800px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 p{
   max-width: 600px;
   margin:0 auto 20px;
+}
+.quote{
+  color: white;
+  padding-top: 400px;
 }
