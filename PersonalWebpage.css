@@ -1,19 +1,19 @@
+
 body{
-  background-image:url(jay.jpg);
-  height: 100vh;
-  background-size: 100%;
-  margin-bottom: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+background-image:url(jay2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+height: 83.5vh;
+background-size: 30%;
+overflow: hidden;
+padding-top: 40px
+}
+h1 {
+text-align:center;
+padding: 460px;
 
 }
-p{
-  max-width: 600px;
-  margin:0 auto 20px;
-}
-.quote{
-  color: white;
-  padding-top: 400px;
+a{
+text-decoration:none;
+color: black;
 }
