@@ -1,11 +1,3 @@
-body{
-  background-image: url(aboutme.jpg);
-  height:100vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  float: left;
-  overflow: hidden;
-}
-p{
-display: list-item;
+body {
+background-color: black;
 }
