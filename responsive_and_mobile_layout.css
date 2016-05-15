@@ -9,5 +9,5 @@
 }
 .collection-sort{
   display:flex;
-  flex-direction:
+  flex-direction:column;
 }
