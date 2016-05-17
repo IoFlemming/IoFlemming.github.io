@@ -1,13 +1,114 @@
-.product-filter{
-  display:flex;
+/*CSS styling portion of the CSS document*/
+
+body{
+font-family: didot;/*changes the default text
+font to the font of your choosing.*/
+margin: 0px;/* The higher the px number
+is, the more the contents of the page are
+compressed/become more compacted.*/
+background:black;/*background of the websites body turns black*/
 }
-.product-filter h1{
-  flex: 1;
+a{
+color:white;/*changes the color of all
+the text in the "a" tags to white*/
+text-decoration: none;/*removes underline from links*/
+background: black;/* changes the background
+of the text in the "a" tags to black*/
+padding: 20px 5px;/*gives the top and
+right side of the text a 20px padding and
+5px of padding to the bottom and left side
+of text.*/
+display: inlne-block;/*replaces the use of clear and float commands in CSS. Inline-block
+elements are like inline elements but they
+can have a width and a height. Creates a grid
+of boxes that fills the browser width and wraps
+ nicely when the browser is resized.*/
+width: 100%;/*tells the text to take up 100% of the area
+of the assigned area.*/
+text-align: center;/*centers text in the middle
+of the page.*/
+transition: all 1.3s;/* When using this command
+it contols the speed at which the text appears
+on the screen.*/
 }
-.sort{
-  display:flex;
+.top h1{
+padding: 0px 0px 0px 30px;
+/*The text "The Art District" was
+slightly of center so I used padding
+to correct it.
+0px from the top of the page.
+0px from the right of the page.
+0px from the bottom of the page.
+30px from the left of the page.*/
 }
-.collection-sort{
-  display:flex;
-  flex-direction:column;
+.dropdownmenu{
+color: white; /*changes the color of all the text
+to white inside of the container of class
+"toggleNav"*/
+padding: 0px 0px 0px 27px;/*The text "menu" was
+slightly of center so I used padding to correct it.
+0px from the top of the page.
+0px from the right of the page.
+0px from the bottom of the page.
+27px from the left of the page.*/
+}
+img{
+width:100%;/*Increases the size of the image to
+100% of the page.(Note)-webpages come with
+default padding that prevents the image
+from hitting the edges of the page. You can
+remove the default settings in jquery and
+possibly javascript.*/
+}
+input{
+padding: 10px; /*Increases the size of the input
+tags with padding around the tags*/
+border:0;/*adds a slight invisible border
+around input tags*/
+}
+section, footer{
+text-align: center;
+background: rgba(0, 0, 0, 0.2);
+padding: 20px;
+color: white;
+}
+
+/*Media query portion of the CSS document*/
+
+/*All media query commands will appear in the range of 501px to 1000px.
+These commands are meant for desktop viewers.*/
+
+@media all and (max-width:1000px){
+
+.flex-nav ul{
+flex-wrap:wrap;/*flex-wrap:wrap, along with display: flex;, causes your listed items to
+move from a evenly spaced, straight line row to an evenly
+spaced two row column when between the range of 501px
+and 1000px width*/
+display: flex;/*See flex-wrap:wrap notes*/
+list-style: none;/*List style removes the bullet points from unlisted items*/
+}
+
+.flex-nav li{
+flex: 1 50%;
+/*When the webpage is between 501px and 1000px width,
+the list items fall into a row. With the below command
+,I am teling the list items to space each item from each
+other evenly,(flex: 1) and to seperate into two even rows,
+(flex: 50%).When you extend the page above 1000px or
+depress the page below 500px the list items will collapse into
+a vertical row.*/
+}
+
+@media all and (max-width:500px){
+/*media all and (max-width:500px){ - section is the media
+query for mobile devices.(in other words - the styling for
+this webpage when viewed on a mobile devce. It will be
+visible in 501px width. Anything bigger and you will lose
+your styling commands )*/
+
+/* flex-basis:100%; - When you collapse your page,(shrink it down to less than 500px),
+this command will cause your listed items to fall into a single line*/
+.flex-nav li{
+flex-basis:100%;
 }
