@@ -1,0 +1,9 @@
+#parent{
+  width:1000px
+  margin:auto;
+  overflow: auto;
+}
+#parent div{
+  float: left;
+  margin-left: 50px;
+}

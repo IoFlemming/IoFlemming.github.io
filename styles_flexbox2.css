@@ -1,0 +1,9 @@
+.small{
+flex: 1;
+}
+.medium{
+  flex: 1;
+}
+#parent{
+  display: flex;
+}
